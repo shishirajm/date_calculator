@@ -1,5 +1,5 @@
-from my_calculator.calculator import get_dates_diff
-from my_calculator.handle_io import get_dates, show_date_difference, show_error
+from src.calculator import get_dates_diff
+from src.handle_io import get_dates, show_date_difference, show_error
 
 
 def main():

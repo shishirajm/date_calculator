@@ -1,4 +1,4 @@
-from my_calculator.date import Date
+from src.date import Date
 
 
 def get_dates_diff(date1, date2):

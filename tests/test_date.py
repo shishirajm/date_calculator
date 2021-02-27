@@ -3,7 +3,7 @@ from datetime import datetime
 
 from parameterized import parameterized
 
-from my_calculator.date import Date
+from src.date import Date
 
 
 class TestDate(unittest.TestCase):
@@ -25,8 +25,8 @@ class TestDate(unittest.TestCase):
     def test_date_instance_with_wrong_date_format_should_raise_exception_2(self):
         self.assertRaises(Exception, lambda: Date('31/04/2021', 'MM/DD/YYYY'))
 
-    def test_date_instance_with_right_date_format_should_raise_exception_2(self):
-        self.assertRaises(Exception, lambda: Date('31/04/2021', 'DD/MM/YYYY'))
+    def test_date_instance_with_text_date_should_raise_exception_2(self):
+        self.assertRaises(Exception, lambda: Date('Some/Random/Text'))
 
     @parameterized.expand([
         '0/01/2021',
