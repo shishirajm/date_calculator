@@ -5,4 +5,7 @@ def get_dates():
 
 
 def show_date_difference(date1, date2, difference):
-    print("Difference between the dates ", date1, "and", date2, "is", difference, "days")
+    print(f"Number of days between the dates {date1} and {date2} is {difference}, days")
+
+def show_error(date1, date2, msg):
+    print(f"Unable to calculate days between {date1} and {date2}. {msg}")
